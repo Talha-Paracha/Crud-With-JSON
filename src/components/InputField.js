@@ -126,14 +126,15 @@ const InputField = () => {
 
       {newValInput.map((elem, id) => {
         return (
-          <div key={elem.id} className="container ">
+          <div key={elem.id} className="container">
             <h2>{`Your Name is : ${elem.name} `}</h2>
 
             <h2>{`Your Age is : ${elem.age}`}</h2>
 
             <h2>{`Your Program is :${elem.program}`}</h2>
+
             <button
-              className="btn btn-warning  ms-5 my-4"
+              className="btn btn-warning  ms-5 my-4 "
               onClick={() => deleteHandler(id)}
               title="Delete Item"
             >
